@@ -47,6 +47,7 @@ header{
         margin-top: 0%;
         margin-left: 0%;
         float: left;
+    
     }
 }
 .sublink{
@@ -73,8 +74,8 @@ header{
     align-items: center;
     }
     .sublink a{
-        margin-right: 13%;
-        margin-top: 1%;
+        width: 100%;
+        padding-left: 0px;
     }
 }
 @media  screen and (max-width:1111px) {
@@ -108,13 +109,15 @@ nav{
     width: 100%;
     margin: 0px;
     height: 500px;
-    align-content: center;
 }
 .self{
     width: 50%;
     float: left;
 }
 .self h1{
+    text-align: center;
+}
+.center{
     text-align: center;
 }
 .self p{
@@ -162,10 +165,12 @@ nav{
 .fa-github{
     font-size: 50px;
 }
+.fa-hackerrank{
+    font-size: 50px;
+}
 @media screen and (max-width:654px) {
     nav{
-        height: 600px;
-        
+        height: 600px; 
     }
     .self{
         width: 100%;
@@ -192,12 +197,13 @@ nav{
     .fa-github{
         font-size: 30px;
     }
+    .fa-hackerrank{
+        font-size: 30px;
+    }
 }
 .project{
     color: rgb(57, 59, 58);
     height: 600px;
-    
-   
 }
 .pro{
     border: 2px solid rgb(51, 48, 48);
@@ -208,6 +214,9 @@ nav{
     float: left;
     margin: 6px;
     overflow: hidden;
+    border: 0px;   
+    box-shadow: 10px 10px 10px black;
+
 }
 .pro img{
     height: 100%;
@@ -220,6 +229,7 @@ nav{
     height: 120%;
     transition: 2s;
 }
+
 @media screen and (max-width:1229px){
     .pro{
         width: 32%;
@@ -281,6 +291,7 @@ nav{
 }
 .skill{
     columns: 1;
+    border-radius: 5px;
     margin-top: 50px;
     background:linear-gradient(180deg,rgb(163, 252, 248),rgb(255, 149, 0));
     color: white;
@@ -302,6 +313,13 @@ nav{
 .skill ul{
     float: left;
     width: 48%;
+    min-width: 300px;
+    background-color: rgba(17, 0, 251, 0.612);
+    padding: 20px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0);
 }
 .skill img{
     border-radius: 50%;
@@ -336,4 +354,166 @@ nav{
         min-width: 200px;
         max-width: 900px;
     }
+}
+.line3{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: red;
+    height: 3px;
+}
+.experience{
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: rgb(178, 234, 255);
+}
+.exp-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.experience img{
+    border-radius: 50%;
+    width: 50%;
+
+}
+.vertical{
+    height: 400px;
+    margin-left: 3%;
+    width: 3px;
+    margin-right: 3%;
+    background-color: black;
+}
+.experience ul{    
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.83);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(248, 6, 111, 0.871);
+    transition: 1s;
+}
+.experience ul:hover{
+    box-shadow: 10px 10px 10px black;
+    transition: 2s;
+}
+.experience ul li{
+    border-radius: 3px;
+    font-weight: bold;
+    height: 45px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+button{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(6, 6, 179);
+    color: white;
+    font-weight: bold;
+    animation-name: btn;
+    cursor: pointer;
+}
+@media screen  and (min-width:0px)and (max-width:950px){
+    .experience img{
+        height: 70%;
+        width: 70%;
+    }
+    .exp-1{
+        display: block;
+    }
+    .vertical{
+        display: none
+    }
+    .experience ul li{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:950px) and (max-width:1300px) {
+    .experience ul li{
+        font-size: 13px;
+    }
+}
+.line4{
+    background-color: rgb(234, 0, 255);
+    height: 3px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+}
+.certified{
+    background-color: rgb(0, 255, 149);
+    padding: 20px 20px;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;   
+}
+.certify{
+    display: flex;
+}
+
+.certified ul{
+    background-color: rgb(248, 248, 248);
+    padding: 20px 20px;
+    text-align: center;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 20px 20px 20px black;
+}
+.certified ul li{
+    background-color: blue;
+    color: white;
+    padding: 1% 1%;
+    margin: 20px 20px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.certify img{
+    border-radius: 50%;
+    width: 45%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen  and (min-width:0px)and (max-width:950px){
+    .certify{
+        display: block;
+    }
+    .certified ul{
+        width: 100%;
+        font-size: 13px;
+    }
+    .certified img{
+        width: 100%;
+    }
+    .certified{
+        height: 800px;
+    }
+}
+footer{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 20px;
+    background-color: rgb(4, 4, 4);
 }
