@@ -53,7 +53,7 @@ questions={'who created python?: ':"A",
              'is earth round':"A"}
 
 options=[['A.Gudio Van Rossum','B.Elon Musk','C.Bill Gates','D.mark'],
-         ['A.1989','B.1919','C.2000','D.2016'],
+         ['A.1989','B.1991','C.2000','D.2016'],
          ['A.Lonely','B.smosh','C.Monty Python','D.SNL'],
          ['A.true','B.false','C.sometims','D.eartnh']]
 new_game()
