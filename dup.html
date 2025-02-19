@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="dup.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="signlogo.png" alt="missing image" title="">
+            </div>
+            <nav class="sublink">
+                <a href="see.html" class="active">HOME</a>
+                <a href="#projects-sec">PROJECTS</a>
+                <a href="#about-sec">ABOUT</a>
+                <a href="#services-sec">SERVICES</a>
+                <a href="#hire-sec">HIRE ME</a>
+            </nav>
+        </div>
+    </header>
+    <div class="line"></div>
+    <section class="intro">
+        <div class="self">
+            <h1>I'm Bhaskara Rao Bantupalli</h1>
+            <p>This is my official portfolio website to showcase all details and work experience in web development.</p>
+            <a href="REAL RESUME.pdf" class="btn"><button>Download Resume</button></a>
+            <div class="social-icons">
+                <a href="mailto:bantupallibhaskararao42@gmail.com" class="icon">
+                    <i class="fa fa-envelope" style="color:rgb(62, 62, 239);"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bhaskara-rao-bantupalli/" class="icon" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color:rgb(62, 62, 239)"></i>
+                </a>
+                <a href="https://github.com/Bhaskar-Rao-1" class="icon" target="_blank">
+                    <i class="fa-brands fa-github" style="color:rgb(0, 0, 0)"></i>
+                </a>
+                <a href="https://www.hackerrank.com/profile/bantupallibhask1" class="icon" target="_blank">
+                    <i class='fa-brands fa-hackerrank' style='color:rgb(0, 255, 60)'></i>
+                </a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="signlogo.png" alt="missing" title="">
+        </div>
+    </section>
+    <div class="line"></div>
+    <section id="projects-sec" class="projects">
+        <h3>PROJECTS</h3>
+        <div class="project-grid">
+            <div class="pro"><a href="quiz.html"><img src="quiz.avif" title="Quiz project"></a></div>
+            <div class="pro"><img src="rps1.jpg" title="Rock Paper Scissors Game"></div>
+            <div class="pro"><img src="calculator.avif" title="Calculator"></div>
+            <div class="pro"><img src="project.avif" title="Web Portfolio"></div>
+            <div class="pro"><img src="ATM.avif" alt="ATM Project" title="ATM Project"></div>
+            <div class="pro"><img src="AI.avif" title="Face Recognizing"></div>
+            <div class="pro"><img src="web design.avif" title="Responsive Web"></div>
+            <div class="pro"><img src="weather.jpg" title="Weather Data"></div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section class="skills">
+        <h3>SKILLS</h3>
+        <div class="skills-container">
+            <ul>
+                <li>C Programming Language</li>
+                <li>Python Programming</li>
+                <li>C++ Programming Language</li>
+                <li>Java Programming</li>
+                <li>Frontend Development</li>
+                <li>Oracle SQL</li>
+            </ul>
+            <img src="skills.avif" alt="Skills Image">
+        </div>
+    </section>
+    <div class="line"></div>
+    <section class="experience">
+        <h2>EXPERIENCE</h2>
+        <div class="exp-container">
+            <img src="experience.avif" alt="Experience Image">
+            <div class="vertical"></div>
+            <div class="exp-details">
+                <ul>
+                    <li>C++ Intern at CodeSoft</li>
+                    <li>Python Intern at OctaNet</li>
+                    <li>Web Developer at Bharat Intern</li>
+                    <li>Software Engineering Virtual Intern at Commonwealth Bank</li>
+                </ul>
+                <a href="#" class="btn">View More Details...</a>
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section class="certified">
+        <h2>CERTIFICATES</h2>
+        <div class="certified-container">
+            <ul>
+                <li>Python Course Completion at GUVI</li>
+                <li>AI for 2.0 Course Completion at GUVI</li>
+                <li>Certificates of Test Completion HTML & CSS from KnowledgeGate</li>
+                <li>Java Basics Certificate from HackerRank</li>
+            </ul>
+            <img src="certificate.avif" alt="Certificates Image">
+        </div>
+    </section>
+    <footer>
+        <p id="year"></p>
+    </footer>
+    <script>
+        let currentDate = new Date();
+        let Year = currentDate.getFullYear();
+        document.getElementById('year').innerText = "© " + Year + " Portfolio";
+    </script>
+</body>
+</html>

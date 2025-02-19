@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:monospace;
+    }
+    h1{
+        color: rgba(7, 76, 250, 0.888);
+        margin:0;
+        text-align: center;
+        padding: 10px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: aquamarine;
+    }
+    .overall{
+        /*background-color: rgba(0, 153, 255, 0.778);*/
+        background:linear-gradient(180deg,rgba(10, 115, 220, 0.848),rgba(237, 115, 115, 0.958));
+        color: white;
+        background-size: cover;
+
+    }
+    h3{
+        color: black;
+    }
+    .link{
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 10px 10px;
+          background-color: rgb(0, 153, 255);;
+    }
+    p{
+        padding: 30px;
+        font-size: 1.5rem;
+        color: black;
+    }
+    header{
+        background-color: rgb(255, 255, 255);
+        height: 200px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media  screen and (max-width:1111px) {
+        header{
+            height: 250px;
+        }
+    }
+    @media screen and (max-width:654px) {
+        header{
+            height: 200px;
+        }
+    }
+    .logo{
+        float: left;
+    }
+    .logo img{
+        height: 100px;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    @media  screen and (max-width:1111px) {
+        .logo{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            margin-top: 4%;
+        }
+    }
+    @media screen and (max-width:654px) {
+        .logo{
+            margin-left: 0%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .logo img{
+            margin-top: 0%;
+            margin-left: 0%;
+            float: left;
+        }
+    }
+    .sublink{
+        float: left;
+        width: 50%;
+        margin-left: 13%;
+        margin-top: 6%;
+    }
+    .sublink a{
+        padding-left: 10%;
+        text-decoration: none;
+        color: black;
+        float: left;
+    }
+    .sublink a:hover{
+        color: rgb(78, 183, 78);
+        transition: 1s;
+    
+    }
+    @media screen and (max-width:1253px) {
+        .sublink{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sublink a{
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
+    @media  screen and (max-width:1111px) {
+        .sublink{
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 6%;
+        }
+        .sublink a{
+            width: 600px;
+            text-align: center;
+            padding-left: 1%;
+            margin-right: 2% ;
+        }
+    }
+    @media screen and (max-width:411px){
+        header{
+            height: 165px;
+        }
+        .sublink a{
+            font-size: 15px;    
+        }
+    }
+    .line{
+        background-color: rgb(34, 238, 65);
+        height: 3px;
+        margin: 10px 10px;
+    }
+.line5{
+    background-color: red;
+    height: 3px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+footer{
+    height: 150px;
+    margin-top: 2%;
+   background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
+}
+footer p{
+    font-size: 13px;
+    padding: 0px 0px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.foo-down{
+    margin-top: 1%;
+    height: 100%;
+    float: left;
+    width: 26%;
+    margin-left: 5%;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="signlogo.png" alt="missing image" title="">
+        </div>
+        <div class="sublink">
+            <a href="see.html">HOME</a>
+            <a href="#" style="color: rgb(158, 13, 13);">PROJECTS</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SERVICES</a>
+            <a href="#">HIRE ME</a>
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="overall">
+        <h1>Rock Paper Scissors Game</h1>
+
+       <p> The goal of the game is to choose a move (rock, paper, or scissors) that beats the computer's randomly chosen move based on the following rules:
+    </p> 
+    <div class="link"><a href="https://github.com/Bhaskar-Rao-1/Game/blob/main/game.py" target="_blank">View code</a></div>
+    <ol>
+        <li>
+            <h3>Game Initialization :</h3>
+            - The game starts and runs continuously in a loop, allowing you to play multiple rounds until you decide to stop.
+         </li><br>
+         <li>
+            <h3>Choices :</h3>
+            - There are three possible choices for both the player and the computer: rock, paper, and scissors.
+         </li>
+         <li>
+            <h3>Computer's Move :</h3>
+           - The computer randomly selects one of the three choices (rock, paper, or scissors) at the beginning of each round.
+
+
+        </li>
+
+        <li>  
+            <h3>Player's Move :</h3>
+           - You, the player, are prompted to input your choice. The game ensures that your input is valid (i.e., it must be either rock, paper, or scissors).
+
+        </li>
+        <li>
+            <h3>Displaying Moves :</h3>
+            - Once both the computer and the player have made their choices, the game displays both choices.
+        </li>
+        <li>
+            <h3>Determining the Winner :</h3>
+            - The game compares the player's choice with the computer's choice to determine the winner:<br>
+            - If both choices are the same, it’s a tie.<br>
+            - If the player's choice is rock and the computer's choice is scissors, the player wins (rock crushes scissors). If the computer's choice is paper, the player loses (paper covers rock).<br>
+            - If the player's choice is paper and the computer's choice is rock, the player wins (paper covers rock). If the computer's choice is scissors, the player loses (scissors cut paper).<br>
+            - If the player's choice is scissors and the computer's choice is paper, the player wins (scissors cut paper). If the computer's choice is rock, the player loses (rock crushes scissors).<br>
+        </li>
+        <li>
+            <h3>Play Again? :</h3>
+            - After determining and displaying the result of the round (win, lose, or tie), the game asks if you want to play another round.<br>
+            - If you choose to play again, the game restarts the loop and you can make a new choice.<br>
+            - If you decide not to play again, the game ends and displays a goodbye message.
+        </li>
+    </ol>
+
+
+
+<p>This project is a good exercise for practicing Python fundamentals like loops, functions, and working with lists and dictionaries.</p>
+    </div>
+    <div class="line5"></div>
+    <footer>
+        <div class="foo-down">
+            <p>Anandapuram</p>
+            <p>Visakhapatnam</p>
+            <p>Andhra Pradesh</p>
+            <p>INDIA</p>
+        </div>
+        <div class="foo-down">
+            <p id="year"></p>
+        </div>
+        <div class="foo-down">
+            <p>bantupallibhaskararao42@gmail.com</p>
+            <p>+917093520025</p>
+        </div>
+    </footer>
+    <div class="li"></div>
+    <script>
+        let currentDate = new Date();
+        let Year = currentDate.getFullYear();
+        document.getElementById('year').innerText="©"+Year+" Portfolio";
+    </script>
+</body>
+</html>

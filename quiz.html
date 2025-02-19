@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:monospace;
+    }
+    h1{
+        color: rgba(7, 76, 250, 0.888);
+        margin:0;
+        text-align: center;
+        padding: 10px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: aquamarine;
+    }
+    .overall{
+        /*background-color: rgba(0, 153, 255, 0.778);*/
+        background:linear-gradient(180deg,rgba(10, 115, 220, 0.848),rgba(45, 234, 20, 0.958));
+        color: white;
+        background-size: cover;
+
+    }
+    h3{
+        color: black;
+    }
+    .link{
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 10px 10px;
+          background-color: rgb(0, 153, 255);;
+    }
+    p{
+        padding: 30px;
+        font-size: 1.5rem;
+        color: black;
+    }
+    header{
+        background-color: rgb(255, 255, 255);
+        height: 200px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media  screen and (max-width:1111px) {
+        header{
+            height: 250px;
+        }
+    }
+    @media screen and (max-width:654px) {
+        header{
+            height: 200px;
+        }
+    }
+    .logo{
+        float: left;
+    }
+    .logo img{
+        height: 100px;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    @media  screen and (max-width:1111px) {
+        .logo{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            margin-top: 4%;
+        }
+    }
+    @media screen and (max-width:654px) {
+        .logo{
+            margin-left: 0%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .logo img{
+            margin-top: 0%;
+            margin-left: 0%;
+            float: left;
+        }
+    }
+    .sublink{
+        float: left;
+        width: 50%;
+        margin-left: 13%;
+        margin-top: 6%;
+    }
+    .sublink a{
+        padding-left: 10%;
+        text-decoration: none;
+        color: black;
+        float: left;
+    }
+    .sublink a:hover{
+        color: rgb(78, 183, 78);
+        transition: 1s;
+    
+    }
+    @media screen and (max-width:1253px) {
+        .sublink{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sublink a{
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
+    @media  screen and (max-width:1111px) {
+        .sublink{
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 6%;
+        }
+        .sublink a{
+            width: 600px;
+            text-align: center;
+            padding-left: 1%;
+            margin-right: 2% ;
+        }
+    }
+    @media screen and (max-width:411px){
+        header{
+            height: 165px;
+        }
+        .sublink a{
+            font-size: 15px;    
+        }
+    }
+    .line{
+        background-color: rgb(34, 238, 65);
+        height: 3px;
+        margin: 10px 10px;
+    }
+.line5{
+    background-color: red;
+    height: 3px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+footer{
+    height: 150px;
+    margin-top: 2%;
+   background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
+}
+footer p{
+    font-size: 13px;
+    padding: 0px 0px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.foo-down{
+    margin-top: 1%;
+    height: 100%;
+    float: left;
+    width: 26%;
+    margin-left: 5%;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="signlogo.png" alt="missing image" title="">
+        </div>
+        <div class="sublink">
+            <a href="see.html">HOME</a>
+            <a href="#" style="color: rgb(158, 13, 13);">PROJECTS</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SERVICES</a>
+            <a href="#">HIRE ME</a>
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="overall">
+        <h1>Simple text-based Quiz Game</h1>
+
+       <p>This Python project is a simple text-based quiz game. The game asks multiple-choice questions to the player, evaluates their answers, and then displays the player's score at the end. Below is an explanation of how the different functions work together:
+    </p> 
+    <div class="link"><a href="https://github.com/Bhaskar-Rao-1/projects/blob/main/quiz.py" target="_blank">View code</a></div>
+    <ol>
+        <li>
+            <h3>`new_game()` Function :</h3>
+            Purpose : This is the main function that starts a new quiz game.
+              - Initializes an empty list `guesses` to store the player's answers and `correct_guesses` to count the number of correct answers.<br>
+              - Loops through each question in the `questions` dictionary.<br>
+              - Displays each question and its corresponding options from the `options` list.<br>
+              - Collects the player's guess and stores it in the `guesses` list.<br>
+              - Calls the `check_answer()` function to verify if the guess is correct and increments the `correct_guesses` count accordingly.<br>
+              - Calls `display_score()` at the end to show the final results.<br>
+              - Asks if the player wants to play again using the `play_again()` function.
+         </li><br>
+         <li>
+            <h3>`check_answer(answer, guess)` Function :</h3>
+            Purpose : To verify if the player's guess matches the correct answer.<br>
+              - Compares the player's guess with the correct answer.<br>
+              - Prints "correct" if the guess is right and "Wrong" if it's incorrect.<br>
+              - Returns `1` if the answer is correct (to increment the score) or `0` if it's wrong.
+         </li>
+         <li>
+            <h3>`display_score(correct_guesses, guesses)` Function :</h3>
+            Purpose : To display the final score and a summary of the player's answers.<br>
+            - Prints the correct answers and the player's guesses side by side.<br>
+            - Calculates the score as a percentage by dividing the number of correct guesses by the total number of questions.<br>
+            - Displays the final score.
+        </li>
+
+        <li>  
+            <h3>`play_again()` Function :</h3>
+            Purpose: To determine if the player wants to restart the game.<br>
+            - Prompts the player with "play again: yes/no".<br>
+            - If the player types "yes", it calls the `new_game()` function to restart the game.<br>
+            - If the player types anything else, it ends the game with a "bye!" message.<br>
+        </li>
+        <li>
+            <h3>Data Structures</h3>
+            **`questions` Dictionary**: Contains the quiz questions as keys and the correct answer (A, B, C, or D) as values.<br>
+            - `options` List : A list of lists, where each sublist contains the multiple-choice options for a corresponding question.
+        </li>
+    </ol>
+
+
+<h3>Example of Game Flow:</h3> 
+<ul>
+    <li>The game starts and asks the first question, displaying the multiple-choice options.</li>
+    <li>The player inputs their guess (A, B, C, or D).</li>
+    <li>The game checks if the guess is correct and continues to the next question.</li>
+    <li>After all questions are answered, the game displays the correct answers, the player's guesses, and their final score.</li>
+    <li>The player is asked if they want to play again.</li>
+</ul>
+<p>This project is a good exercise for practicing Python fundamentals like loops, functions, and working with lists and dictionaries.</p>
+    </div>
+    <div class="line5"></div>
+    <footer>
+        <div class="foo-down">
+            <p>Anandapuram</p>
+            <p>Visakhapatnam</p>
+            <p>Andhra Pradesh</p>
+            <p>INDIA</p>
+        </div>
+        <div class="foo-down">
+            <p id="year"></p>
+        </div>
+        <div class="foo-down">
+            <p>bantupallibhaskararao42@gmail.com</p>
+            <p>+917093520025</p>
+        </div>
+    </footer>
+    <div class="li"></div>
+    <script>
+        let currentDate = new Date();
+        let Year = currentDate.getFullYear();
+        document.getElementById('year').innerText="©"+Year+" Portfolio";
+    </script>
+</body>
+</html>

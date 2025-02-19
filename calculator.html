@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:monospace;
+    }
+    h1{
+        color: rgba(7, 76, 250, 0.888);
+        margin:0;
+        text-align: center;
+        padding: 10px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: aquamarine;
+    }
+    .overall{
+        /*background-color: rgba(0, 153, 255, 0.778);*/
+        background:linear-gradient(180deg,rgba(10, 115, 220, 0.848),rgba(237, 115, 115, 0.958));
+        color: white;
+        background-size: cover;
+
+    }
+    h3{
+        color: black;
+    }
+    .link{
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 10px 10px;
+          background-color: rgb(0, 153, 255);;
+    }
+    p{
+        padding: 30px;
+        font-size: 1.5rem;
+        color: black;
+    }
+    header{
+        background-color: rgb(255, 255, 255);
+        height: 200px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media  screen and (max-width:1111px) {
+        header{
+            height: 250px;
+        }
+    }
+    @media screen and (max-width:654px) {
+        header{
+            height: 200px;
+        }
+    }
+    .logo{
+        float: left;
+    }
+    .logo img{
+        height: 100px;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    @media  screen and (max-width:1111px) {
+        .logo{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            margin-top: 4%;
+        }
+    }
+    @media screen and (max-width:654px) {
+        .logo{
+            margin-left: 0%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .logo img{
+            margin-top: 0%;
+            margin-left: 0%;
+            float: left;
+        }
+    }
+    .sublink{
+        float: left;
+        width: 50%;
+        margin-left: 13%;
+        margin-top: 6%;
+    }
+    .sublink a{
+        padding-left: 10%;
+        text-decoration: none;
+        color: black;
+        float: left;
+    }
+    .sublink a:hover{
+        color: rgb(78, 183, 78);
+        transition: 1s;
+    
+    }
+    @media screen and (max-width:1253px) {
+        .sublink{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sublink a{
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
+    @media  screen and (max-width:1111px) {
+        .sublink{
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 6%;
+        }
+        .sublink a{
+            width: 600px;
+            text-align: center;
+            padding-left: 1%;
+            margin-right: 2% ;
+        }
+    }
+    @media screen and (max-width:411px){
+        header{
+            height: 165px;
+        }
+        .sublink a{
+            font-size: 15px;    
+        }
+    }
+    .line{
+        background-color: rgb(34, 238, 65);
+        height: 3px;
+        margin: 10px 10px;
+    }
+.line5{
+    background-color: red;
+    height: 3px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+footer{
+    height: 150px;
+    margin-top: 2%;
+   background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
+}
+footer p{
+    font-size: 13px;
+    padding: 0px 0px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.foo-down{
+    margin-top: 1%;
+    height: 100%;
+    float: left;
+    width: 26%;
+    margin-left: 5%;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="signlogo.png" alt="missing image" title="">
+        </div>
+        <div class="sublink">
+            <a href="see.html">HOME</a>
+            <a href="#" style="color: rgb(158, 13, 13);">PROJECTS</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SERVICES</a>
+            <a href="#">HIRE ME</a>
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="overall">
+        <h1>Simple Calculator in C</h1>
+
+       <p>  This calculator can perform addition, subtraction, multiplication, division, and modulus operations. Let’s dive into how it works.
+    <div class="link"><a href="https://github.com/Bhaskar-Rao-1/Game/blob/main/game.py" target="_blank">View code</a></div>
+    <ol>
+        <li>
+            <h3>Introduction Message :</h3>
+            - The program starts by displaying a welcome message to the user: *** CALCULATOR ***.
+         </li><br>
+         <li>
+            <h3>User Input for the First Number :</h3>
+            - The user is prompted to enter the first number. This input must be an integer.
+         </li>
+         <li>
+            <h3>User Input for the Operator :</h3>
+           - The user is asked to choose an operator from the following options:<br>
+           &nbsp;&nbsp;+ for addition<br>
+           &nbsp;&nbsp;- for subtraction<br>
+           &nbsp;&nbsp;* for multiplication<br>
+           &nbsp;&nbsp;/ for division<br>
+           &nbsp;&nbsp;% for modulus (remainder of division)<br>
+           -The program ensures that the operator entered is one of these valid options.
+
+        </li>
+
+        <li>  
+            <h3>User Input for the Second Number :</h3>
+           - The user is prompted to enter the second number, which also must be an integer.
+
+        </li>
+        <li>
+            <h3>Performing the Calculation :</h3>
+            - Based on the operator entered, the program performs the corresponding arithmetic operation.
+        </li>
+        <li>
+            <h3>Handling Invalid Inputs :</h3>
+            - If the user enters an invalid operator (anything other than +, -, *, /, %), the program displays an error message indicating that the operator is not valid.<br>
+            - The program also includes checks to ensure that division and modulus operations are not attempted with a zero divisor, as this would cause an error.<br>
+            
+        </li>
+        <li>
+            <h3>Ending the Program :</h3>
+            -After performing the calculation and displaying the result, the program ends. If there were any errors, such as an invalid operator or division by zero, appropriate error messages are displayed before the program terminates.
+        </li>
+    </ol>
+
+
+
+<p>This project can handle invalid inputs and it supports basic arithmetic operations.This simple calculator in C is a great example of how basic programming concepts can be used to create functional and interactive applications.</p>
+    </div>
+    <div class="line5"></div>
+    <footer>
+        <div class="foo-down">
+            <p>Anandapuram</p>
+            <p>Visakhapatnam</p>
+            <p>Andhra Pradesh</p>
+            <p>INDIA</p>
+        </div>
+        <div class="foo-down">
+            <p id="year"></p>
+        </div>
+        <div class="foo-down">
+            <p>bantupallibhaskararao42@gmail.com</p>
+            <p>+917093520025</p>
+        </div>
+    </footer>
+    <div class="li"></div>
+    <script>
+        let currentDate = new Date();
+        let Year = currentDate.getFullYear();
+        document.getElementById('year').innerText="©"+Year+" Portfolio";
+    </script>
+</body>
+</html>
